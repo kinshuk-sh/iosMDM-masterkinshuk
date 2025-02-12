@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  button(onclick='openSettings("prefs://root=General&path=ManagedConfigurationList")') Open Settings to profiles
+  button(onclick='openSettings("App-prefs://prefs:root=Settings")') Open Settings app
+  button(onclick='openSettings("App-prefs://root=General&path=ManagedConfigurationList")') Open Settings app (alt)
+  button(onclick='openSettings("prefs:root=General")') Open Settings app (alt 2)
+  button(onclick='openSettings("App-prefs://General&path=ManagedConfigurationList")') Open Settings to profiles (alt 3)
+  button(onclick='openSettings("companyportal://")') Open Company Portal
+  script.
+    function openSettings(url) {
+      //window.open(url)
+      window.location.href = url
+    }
