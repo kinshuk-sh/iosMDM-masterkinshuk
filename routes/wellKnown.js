@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 
 const knownDomainConfigurations = {
-    "ksintunetest.onmicrosoft.com": 'https://manage.microsoft.com/EnrollmentServer/PostReportDeviceInfoForUEV2?aadTenantId=7dbc8268-5fe9-40c8-891f-414a8ff45619'
+    "ksintunetest.xyz": 'https://manage.microsoft.com/EnrollmentServer/PostReportDeviceInfoForUEV2?aadTenantId=c36c7833-8eae-432e-8a91-191c57d0b6a0'
 }
 
 const knownUserNameOverrides = {
